@@ -24,7 +24,7 @@ function App() {
             .includes(searchQuery.toLowerCase())
         )
       : posts;
-
+  console.log(searchedPosts);
   function handleAddPost(post) {
     setPosts((posts) => [post, ...posts]);
   }
