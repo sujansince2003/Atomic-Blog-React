@@ -50,5 +50,12 @@ function BlogContextProvider({children}) {
   )
 }
  
-export { BlogContextProvider,BlogContext}
+//creating custom hook for useContext
+function useBlogcontext()
+{
+    const context=useContext(BlogContext)
+    return context;
+}
+
+export { BlogContextProvider,BlogContext,useBlogcontext}
 ;
